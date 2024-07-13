@@ -1,27 +1,19 @@
 // you can use this type for react children if you so choose
-import { Dispatch, ReactNode, SetStateAction, useEffect, useState } from 'react';
+import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
+import { Tabs } from '../types';
 
-type Tabs = 'favorited' | 'unfavorited' | 'create' | null;
+type FunctionalSectionTypes = {
+  children: ReactNode;
+  handleTabChange: (arg0: Tabs) => void;
+  activeTab: Tabs;
+};
 
 export const FunctionalSection = ({
-  setIsUserCreatingDog,
   children,
-}: {
-  setIsUserCreatingDog: Dispatch<SetStateAction<boolean>>;
-  children: ReactNode;
-}) => {
-  const [activeTab, setActiveTab] = useState<Tabs>(null);
-
-  const handleTabChange = (selectedTab: Tabs) => {
-    const newActiveTab = activeTab === selectedTab ? null : selectedTab;
-    setActiveTab(newActiveTab);
-  };
-
-  useEffect(() => {
-    setIsUserCreatingDog(activeTab === 'create');
-  }, [activeTab]);
-
+  handleTabChange,
+  activeTab,
+}: FunctionalSectionTypes) => {
   return (
     <section id='main-section'>
       <div className='container-header'>
@@ -52,7 +44,6 @@ export const FunctionalSection = ({
             className={`selector ${activeTab === 'create' ? 'active' : ''}`}
             onClick={() => {
               handleTabChange('create');
-              setIsUserCreatingDog(true);
             }}
           >
             create dog
