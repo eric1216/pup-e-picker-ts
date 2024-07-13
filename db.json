@@ -1,1 +1,144 @@
-{"dogs":[{"name":"Nannie","image":"/assets/corgi.png","description":"inquisitively oof calm acupuncture whereas equatorial gosh effectuate","isFavorite":true,"id":0},{"name":"Brycen","image":"/assets/chihuahua.avif","description":"bottleful after baste obliterate putrid","isFavorite":false,"id":1},{"name":"Thurman","image":"/assets/boxer.png","description":"subtle though jade indeed before island aha","isFavorite":true,"id":2},{"name":"Orrin","image":"/assets/chihuahua.avif","description":"provided after despite till watcher","isFavorite":true,"id":3},{"name":"Lucie","image":"/assets/dalmation.png","description":"psst justly browsing all solid","isFavorite":false,"id":4},{"name":"Luella","image":"/assets/blue-heeler.png","description":"smoothly idolized naturally yum that till phew","isFavorite":false,"id":5},{"name":"Shannon","image":"/assets/cowardly.png","description":"invite insistent brr truthfully athwart bah straddle assassination","isFavorite":true,"id":6},{"name":"Imani","image":"/assets/dalmation.png","description":"rattle excluding skean on recovery","isFavorite":true,"id":7},{"name":"Danyka","image":"/assets/chihuahua.avif","description":"chillax daily sally however lest","isFavorite":true,"id":8},{"name":"Toby","image":"/assets/blue-heeler.png","description":"wildly forenenst rightfully till how","isFavorite":false,"id":9},{"name":"Tyson","image":"/assets/blue-heeler.png","description":"inequality maroon however nimble segregate","isFavorite":false,"id":10},{"name":"Eulalia","image":"/assets/boxer.png","description":"foolish rarely despite fooey frantically definitive jubilant dislike","isFavorite":true,"id":11},{"name":"Lawson","image":"/assets/cowardly.png","description":"uniform but wet cruelly knowledgeable","isFavorite":true,"id":12},{"name":"Cooper","image":"/assets/dalmation.png","description":"furthermore when righteously when handlebar breathe considering so","isFavorite":false,"id":13},{"name":"Melody","image":"/assets/chihuahua.avif","description":"demotivate above hmph exploit hatbox quaver these","isFavorite":false,"id":14},{"name":"Linda","image":"/assets/blue-heeler.png","description":"instead angelic kissingly easily apropos tempting crease","isFavorite":true,"id":15},{"name":"Dakota","image":"/assets/chihuahua.avif","description":"salad hopelessly loyally gah whoever","isFavorite":true,"id":16},{"name":"Stewart","image":"/assets/blue-heeler.png","description":"bad whoever obedient modulo investigation daily yum","isFavorite":true,"id":17},{"name":"Melyssa","image":"/assets/cowardly.png","description":"drat considering youthfully unfortunately whereas aside underline jealously","isFavorite":false,"id":18},{"name":"Korey","image":"/assets/chihuahua.avif","description":"loosely at bossy surprisingly friendly for well-lit seldom","isFavorite":false,"id":19}]}
+{
+  "dogs": [
+    {
+      "name": "Bartholome",
+      "image": "/assets/corgi.png",
+      "description": "boo ashram quizzical unaccountably following worth craftsman",
+      "isFavorite": true,
+      "id": 0
+    },
+    {
+      "name": "Cara",
+      "image": "/assets/corgi.png",
+      "description": "cruelly barring yahoo wifi psst gentrify meh",
+      "isFavorite": true,
+      "id": 1
+    },
+    {
+      "name": "Wanda",
+      "image": "/assets/corgi.png",
+      "description": "physical overcome despite if gauntlet arrogantly fairly gladly",
+      "isFavorite": false,
+      "id": 2
+    },
+    {
+      "name": "Stewart",
+      "image": "/assets/corgi.png",
+      "description": "scoff tabernacle after tenderly but",
+      "isFavorite": false,
+      "id": 3
+    },
+    {
+      "name": "Ashton",
+      "image": "/assets/corgi.png",
+      "description": "although rent meanwhile restock centimeter quickly sandwich",
+      "isFavorite": true,
+      "id": 4
+    },
+    {
+      "name": "Kimberly",
+      "image": "/assets/chihuahua.avif",
+      "description": "justly nor hence ah so plea busy",
+      "isFavorite": true,
+      "id": 5
+    },
+    {
+      "name": "Golda",
+      "image": "/assets/dalmation.png",
+      "description": "wherever pish loathe after fooey chipmunk knowledgeably",
+      "isFavorite": false,
+      "id": 6
+    },
+    {
+      "name": "Deonte",
+      "image": "/assets/chihuahua.avif",
+      "description": "down noxious darn peer quickly",
+      "isFavorite": true,
+      "id": 7
+    },
+    {
+      "name": "Frida",
+      "image": "/assets/dalmation.png",
+      "description": "ick sideboard anti gadzooks arrogantly crusade to ah",
+      "isFavorite": false,
+      "id": 8
+    },
+    {
+      "name": "Kathleen",
+      "image": "/assets/blue-heeler.png",
+      "description": "unkempt gnaw key mummify turnstile till chide layer",
+      "isFavorite": true,
+      "id": 9
+    },
+    {
+      "name": "Asia",
+      "image": "/assets/chihuahua.avif",
+      "description": "likewise hence idealistic gab ouch",
+      "isFavorite": false,
+      "id": 10
+    },
+    {
+      "name": "Xzavier",
+      "image": "/assets/cowardly.png",
+      "description": "next abrogate atop forenenst sarcastic politician aha inasmuch",
+      "isFavorite": false,
+      "id": 11
+    },
+    {
+      "name": "Erling",
+      "image": "/assets/dalmation.png",
+      "description": "member beloved endanger readily clock far disloyal boo",
+      "isFavorite": true,
+      "id": 12
+    },
+    {
+      "name": "Stevie",
+      "image": "/assets/corgi.png",
+      "description": "from ouch dimly pfft while",
+      "isFavorite": true,
+      "id": 13
+    },
+    {
+      "name": "Fred",
+      "image": "/assets/chihuahua.avif",
+      "description": "unethically pick range presentation in",
+      "isFavorite": true,
+      "id": 14
+    },
+    {
+      "name": "Tiara",
+      "image": "/assets/blue-heeler.png",
+      "description": "ouch off index till but to physically delightfully",
+      "isFavorite": false,
+      "id": 15
+    },
+    {
+      "name": "Jonatan",
+      "image": "/assets/corgi.png",
+      "description": "cytoplasm troubled openly because lest",
+      "isFavorite": true,
+      "id": 16
+    },
+    {
+      "name": "Karli",
+      "image": "/assets/dalmation.png",
+      "description": "and coaxingly whoever stark between yuck bashfully",
+      "isFavorite": true,
+      "id": 17
+    },
+    {
+      "name": "Al",
+      "image": "/assets/cowardly.png",
+      "description": "several occupy victoriously concentrate ah merit unless modulo",
+      "isFavorite": true,
+      "id": 18
+    },
+    {
+      "name": "Allan",
+      "image": "/assets/cowardly.png",
+      "description": "xylophone slash toughen than whoever mid parking selfishly",
+      "isFavorite": false,
+      "id": 19
+    }
+  ]
+}
