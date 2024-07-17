@@ -7,12 +7,17 @@ type FunctionalSectionTypes = {
   children: ReactNode;
   handleTabChange: (arg0: Tabs) => void;
   activeTab: Tabs;
+  favoriteAndUnfavoriteCount: {
+    favorited: number;
+    unfavorited: number;
+  };
 };
 
 export const FunctionalSection = ({
   children,
   handleTabChange,
   activeTab,
+  favoriteAndUnfavoriteCount: { favorited, unfavorited },
 }: FunctionalSectionTypes) => {
   return (
     <section id='main-section'>
@@ -29,7 +34,7 @@ export const FunctionalSection = ({
               handleTabChange('favorited');
             }}
           >
-            favorited ( 12 )
+            favorited ( {favorited} )
           </div>
           {/* This should display the unfavorited count */}
           <div
@@ -38,7 +43,7 @@ export const FunctionalSection = ({
               handleTabChange('unfavorited');
             }}
           >
-            unfavorited ( 25 )
+            unfavorited ( {unfavorited} )
           </div>
           <div
             className={`selector ${activeTab === 'create' ? 'active' : ''}`}
