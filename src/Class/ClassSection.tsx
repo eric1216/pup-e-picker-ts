@@ -1,34 +1,66 @@
 // you can use `ReactNode` to add a type to the children prop
-import { Component, ReactNode } from "react";
-import { Link } from "react-router-dom";
+import { Component, ReactNode } from 'react';
+import { Link } from 'react-router-dom';
+import { Tabs } from '../types';
 
-export class ClassSection extends Component {
+type ClassSectionPropTypes = {
+  children: ReactNode;
+  handleTabChange: (arg0: Tabs) => void;
+  activeTab: Tabs;
+  favoriteAndUnfavoriteCount: {
+    favoriteCount: number;
+    unfavoriteCount: number;
+  };
+};
+
+export class ClassSection extends Component<ClassSectionPropTypes> {
   render() {
+    const {
+      children,
+      handleTabChange,
+      activeTab,
+      favoriteAndUnfavoriteCount: { favoriteCount, unfavoriteCount },
+    } = this.props;
     return (
-      <section id="main-section">
-        <div className="container-header">
-          <div className="container-label">Dogs: </div>
+      <section id='main-section'>
+        <div className='container-header'>
+          <div className='container-label'>Dogs: </div>
 
-          <Link to={"/functional"} className="btn">
+          <Link to={'/functional'} className='btn'>
             Change to Functional
           </Link>
 
-          <div className="selectors">
+          <div className='selectors'>
             {/* This should display the favorited count */}
-            <div className={`selector`} onClick={() => {}}>
-              favorited ( 0 )
+            <div
+              className={`selector ${activeTab === 'favorited' ? 'active' : ''}`}
+              onClick={() => {
+                handleTabChange('favorited');
+              }}
+            >
+              favorited ( {favoriteCount} )
             </div>
 
             {/* This should display the unfavorited count */}
-            <div className={`selector`} onClick={() => {}}>
-              unfavorited ( 0 )
+            <div
+              className={`selector ${activeTab === 'unfavorited' ? 'active' : ''}`}
+              onClick={() => {
+                handleTabChange('unfavorited');
+              }}
+            >
+              unfavorited ( {unfavoriteCount} )
             </div>
-            <div className={`selector active`} onClick={() => {}}>
+            <div
+              className={`selector ${activeTab === 'create' ? 'active' : ''}`}
+              onClick={() => {
+                handleTabChange('create');
+              }}
+            >
               create dog
             </div>
           </div>
         </div>
-        <div className="content-container"></div>
+        <div className='content-container'>{children}</div>
       </section>
     );
   }
