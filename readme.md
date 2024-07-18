@@ -41,27 +41,27 @@ To get this project setup, you should:
 ## Standard Requirements
 
 - [x] Setup eslint
-- [ ] Pass all linting checks
+- [x] Pass all linting checks
 
 - To check if linting passes, run `npm run lint`
 
 - [x] Format code with prettier
-- [ ] State should not be duplicated
-- [ ] Variables should be named logically
-- [ ] No unnecessary console logs
-- [ ] No commented out blocks of code (Code comments are fine)
+- [x] State should not be duplicated
+- [x] Variables should be named logically
+- [x] No unnecessary console logs
+- [x] No commented out blocks of code (Code comments are fine)
 - [x] Setup a github repository with your submission as the `main` branch, you will submit a link to this for grading (NOT A ZIP FILE)
 
 ## Typescript Specific Requirements
 
-- [ ] pass **ALL** type checks
+- [x] pass **ALL** type checks
   - Check by running `npm run typecheck`
-- [ ] DON'T USE `any`.... OR ELSE
-- [ ] Keep your types clean and in a logical location
-- [ ] Prop Types for components should be collocated with their components
-- [ ] Shared types should live in a file that says `types` somewhere in it's name
-  - [ ] example: `types.ts` should work fine
-- [ ] Unshared types should live in the component they are used in
+- [x] DON'T USE `any`.... OR ELSE
+- [x] Keep your types clean and in a logical location
+- [x] Prop Types for components should be collocated with their components
+- [x] Shared types should live in a file that says `types` somewhere in it's name
+      -x[ ] example: `types.ts` should work fine
+- [x] Unshared types should live in the component they are used in
 
 ## Example Of Correct Code
 
@@ -80,8 +80,8 @@ Note: It's not a perfect mapping to what you're going to build, below highlights
 
 - [x] place `FunctionalDogs` inside of the `.content-container` div of the `FunctionalSection` component **using React Children**
 - [x] place `FunctionalCreateDogForm` inside of the `.content-container` div of the `FunctionalSection` component **using React Children**
-- [ ] place `ClassDogs` inside of the `.content-container` div of the `ClassSection` component **using React Children**
-- [ ] place `ClassCreateDogForm` inside of the `.content-container` div of the `ClassSection` component **using React Children**
+- [x] place `ClassDogs` inside of the `.content-container` div of the `ClassSection` component **using React Children**
+- [x] place `ClassCreateDogForm` inside of the `.content-container` div of the `ClassSection` component **using React Children**
 
 ## Navigation
 
@@ -126,7 +126,7 @@ You should use conditional rendering to show different components inside of the 
 ## Organizing your fetch calls
 
 - [x] You should have a file called `api.ts` with a request object that contains all of your fetching functions
-- [ ] These can and should be shared to both your class components and your functional components as needed
+- [x] These can and should be shared to both your class components and your functional components as needed
 - [x] `getAllDogs` should return a promise that resolves to an array of all the dogs in the database
 - [x] `postDog` should take in a partial dog object, and return a promise that resolves to the dog object that was created
   - Note: Don't provide an id with the body of your request, the server will create an id for you

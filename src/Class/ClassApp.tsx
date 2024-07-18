@@ -11,7 +11,7 @@ type ClassAppStateTypes = {
   activeTab: Tabs;
   isLoading: boolean;
 };
-export class ClassApp extends Component<ClassAppStateTypes> {
+export class ClassApp extends Component {
   state: ClassAppStateTypes = {
     allDogs: [],
     activeTab: null,

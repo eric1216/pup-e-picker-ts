@@ -13,10 +13,7 @@ type ClassCreateDogFormStateTypes = {
   newDog: Omit<Dog, 'id' | 'isFavorite'>;
 };
 
-export class ClassCreateDogForm extends Component<
-  ClassCreateDogFormPropTypes,
-  ClassCreateDogFormStateTypes
-> {
+export class ClassCreateDogForm extends Component<ClassCreateDogFormPropTypes> {
   state: ClassCreateDogFormStateTypes = {
     newDog: {
       name: '',
