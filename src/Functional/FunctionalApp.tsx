@@ -7,33 +7,29 @@ import { Requests } from '../api';
 import toast from 'react-hot-toast';
 
 export function FunctionalApp() {
-  // state
   const [allDogs, setAllDogs] = useState<Dog[]>([]);
   const [activeTab, setActiveTab] = useState<Tabs>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  // derived state
   const shouldShowDogCreationUI = activeTab === 'create';
 
   const favoriteAndUnfavoriteCount = allDogs.reduce(
     (counts, dog) => {
       if (dog.isFavorite) {
-        counts.favorited += 1;
+        counts.favoriteCount += 1;
       } else {
-        counts.unfavorited += 1;
+        counts.unfavoriteCount += 1;
       }
       return counts;
     },
-    { favorited: 0, unfavorited: 0 }
+    { favoriteCount: 0, unfavoriteCount: 0 }
   );
 
-  // event handlers
   const handleTabChange = (selectedTab: Tabs) => {
     const newActiveTab = activeTab === selectedTab ? null : selectedTab;
     setActiveTab(newActiveTab);
   };
 
-  // api methods
   const refetchData = () => {
     setIsLoading(true);
     return Requests.getAllDogs()
