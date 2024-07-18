@@ -60,7 +60,7 @@ export const FunctionalCreateDogForm = ({ postDog, isLoading }: FunctionalCreate
           );
         })}
       </select>
-      <input type='submit' />
+      <input type='submit' disabled={isLoading} />
     </form>
   );
 };
