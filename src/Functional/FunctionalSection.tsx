@@ -27,7 +27,6 @@ export const FunctionalSection = ({
           Change to Class
         </Link>
         <div className={'selectors'}>
-          {/* This should display the favorited count */}
           <div
             className={`selector ${activeTab === 'favorited' ? 'active' : ''}`}
             onClick={() => {
@@ -36,7 +35,6 @@ export const FunctionalSection = ({
           >
             favorited ( {favoriteCount} )
           </div>
-          {/* This should display the unfavorited count */}
           <div
             className={`selector ${activeTab === 'unfavorited' ? 'active' : ''}`}
             onClick={() => {

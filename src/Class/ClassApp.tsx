@@ -11,6 +11,7 @@ type ClassAppStateTypes = {
   activeTab: Tabs;
   isLoading: boolean;
 };
+
 export class ClassApp extends Component {
   state: ClassAppStateTypes = {
     allDogs: [],
@@ -45,6 +46,7 @@ export class ClassApp extends Component {
       .then((dogs) => {
         this.setState({ allDogs: dogs });
       })
+      .catch((err) => console.error('Error fetching dogs', err))
       .finally(() => this.setState({ isLoading: false }));
   };
 
@@ -52,6 +54,7 @@ export class ClassApp extends Component {
     this.setState({ isLoading: true });
     Requests.updateDog(updatedInfo)
       .then(this.refetchData)
+      .catch((err) => console.error('Error updating dog', err))
       .finally(() => this.setState({ isLoading: false }));
   };
 
@@ -59,6 +62,7 @@ export class ClassApp extends Component {
     this.setState({ isLoading: true });
     Requests.deleteDog(id)
       .then(this.refetchData)
+      .catch((err) => console.error('Error deleting dog', err))
       .finally(() => this.setState({ isLoading: false }));
   };
 
@@ -69,6 +73,7 @@ export class ClassApp extends Component {
       .then(() => {
         toast.success('Dog Created');
       })
+      .catch((err) => console.error('Error posting dog', err))
       .finally(() => this.setState({ isLoading: false }));
   };
 
@@ -89,7 +94,6 @@ export class ClassApp extends Component {
           activeTab={activeTab}
           favoriteAndUnfavoriteCount={this.favoriteAndUnfavoriteCount()}
         >
-          {/* should be inside of the ClassSection component using react children */}
           {!this.shouldShowDogCreationUI() && (
             <ClassDogs
               allDogs={allDogs}

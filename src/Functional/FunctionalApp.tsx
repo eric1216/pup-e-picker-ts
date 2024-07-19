@@ -36,6 +36,7 @@ export function FunctionalApp() {
       .then((dogs) => {
         setAllDogs(dogs);
       })
+      .catch((err) => console.error('Error fetching dogs', err))
       .finally(() => setIsLoading(false));
   };
 
@@ -43,6 +44,8 @@ export function FunctionalApp() {
     setIsLoading(true);
     Requests.updateDog(updatedInfo)
       .then(refetchData)
+      .catch((err) => console.error('Error updating dog', err))
+
       .finally(() => setIsLoading(false));
   };
 
@@ -50,6 +53,8 @@ export function FunctionalApp() {
     setIsLoading(true);
     Requests.deleteDog(id)
       .then(refetchData)
+      .catch((err) => console.error('Error deleting dog', err))
+
       .finally(() => setIsLoading(false));
   };
 
@@ -60,6 +65,8 @@ export function FunctionalApp() {
       .then(() => {
         toast.success('Dog Created');
       })
+      .catch((err) => console.error('Error posting dogs', err))
+
       .finally(() => setIsLoading(false));
   };
 
